@@ -93,6 +93,7 @@ public class MapActivity extends Activity implements LocationListener, GpsStatus
 
       // only once a layer is associated with a mapView the rendering starts
       mapView.getLayerManager().getLayers().add(tileRendererLayer);
+      mapView.getLayerManager().getLayers().add(mCurrentPosMarker);
 
       if(mLocationManager != null){
          mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0.0f, this);
@@ -108,8 +109,9 @@ public class MapActivity extends Activity implements LocationListener, GpsStatus
       if(mLocationManager != null){
          mLocationManager.removeUpdates(this);
       }
-
-      mapView.getLayerManager().getLayers().remove(this.tileRendererLayer);
+      
+      mapView.getLayerManager().getLayers().remove(mCurrentPosMarker);
+      mapView.getLayerManager().getLayers().remove(tileRendererLayer);
       tileRendererLayer.onDestroy();
    }
 
