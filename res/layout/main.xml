@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center"
+        >
+
+    <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+            >
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/sats_label"
+                  android:textSize="18sp"
+                  android:text="Sats in View:"
+                />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/sats_value"
+                  android:text="N/A"
+                  android:textSize="28sp"
+                  android:layout_marginBottom="10dp"
+                />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/time_label"
+                  android:textSize="18sp"
+                  android:text="Time UTC:"
+                />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/time_value"
+                  android:text="N/A"
+                  android:textSize="28sp"
+                  android:layout_marginBottom="10dp"
+                />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/lat_label"
+                  android:textSize="18sp"
+                  android:text="Latitude:"
+                />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/lat_value"
+                  android:text="N/A"
+                  android:textSize="28sp"
+                  android:layout_marginBottom="10dp"
+                />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/lng_label"
+                  android:textSize="18sp"
+                  android:text="Longitude:"
+                />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/lng_value"
+                  android:text="N/A"
+                  android:textSize="28sp"
+                  android:layout_marginBottom="10dp"
+                />
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/alt_label"
+                  android:textSize="18sp"
+                  android:text="Altitude:"
+                />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/alt_value"
+                  android:text="N/A"
+                  android:textSize="28sp"
+                  android:layout_marginBottom="10dp"
+                />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/speed_label"
+                  android:textSize="18sp"
+                  android:text="Speed:"
+                />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/speed_value"
+                  android:text="N/A"
+                  android:textSize="28sp"
+                  android:layout_marginBottom="10dp"
+                />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/course_label"
+                  android:textSize="18sp"
+                  android:text="Course:"
+                />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/course_value"
+                  android:text="N/A"
+                  android:textSize="28sp"
+                  android:layout_marginBottom="10dp"
+                />
+
+
+    </LinearLayout>
+</LinearLayout>
+
