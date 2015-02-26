@@ -110,7 +110,9 @@ public class MainActivity extends Activity implements LocationListener, GpsStatu
    {
       mValueViewList = new ArrayList<>();
 
-      mSatsValueView = (TextView) findViewById(R.id.sats_value);
+      //mSatsValueView = (TextView) findViewById(R.id.sats_value);
+      mSatsValueView = TextView.class.cast(findViewById(R.id.sats_value));
+
       mTimeValueView = (TextView)findViewById(R.id.time_value);
       mLatValueView = (TextView)findViewById(R.id.lat_value);
       mLngValueView = (TextView)findViewById(R.id.lng_value);
